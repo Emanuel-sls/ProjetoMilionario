@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-      <h2>Cadastrar</h2>
+      <h2>Cadastrar Funcionario</h2>
 
     <div class="formulario">
         <form>
