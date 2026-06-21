@@ -24,7 +24,7 @@
 
         <!-- Rodapé:Info. da Tela Inicial -->
         <footer>
-            Aberto todos os dias • 10:30 - 21:00<br>
+            Aberto todos os dias • 10:30 - 21:30<br>
             <hr class="linhaB">
             Rua das Flores, 123 • Centro, São Paulo<br>
             (11) 99999-0000<br>
