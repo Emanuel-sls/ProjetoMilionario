@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
 
     /* Imagem de fundo */
-    background: url("inicialimg.png") center center/cover no-repeat;
+    background: url("./img/inicialImg.png") center center/cover no-repeat;
 
     /* Centraliza tudo na tela */
     display: flex;
@@ -101,7 +101,7 @@ main{
     border: none;
     border-radius: 30px;
 
-    background: #f9a826;
+    background: #FFA033;
     color: #000;
 
     font-family: 'Montserrat', sans-serif;
