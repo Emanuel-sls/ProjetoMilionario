@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Sabor Vivo</title>
 </head>
 <body>
-      <h2>Cadastrar Funcionario</h2>
+     <div class="painel">
+        <!-- Cabeçalho: Título e Subtítulo da Tela Inicial -->
+        <header>
+            <p class="acesso-digital">Acesso digital</p>
+            <h1 class="titulo">Sabor Vivo</h1>
+            <hr class="linhaA">
+            <p class="subtitulo">Fresco, Feito e Servido</p>
+        </header>
 
-    <div class="formulario">
-        <form>
-            <label>Nome Do Usuario: </label>
-            <input type="text" placeholder="Digite seu Nome">
+        <!-- Tela principal: Botões um para cliente e outro adm -->
+        <main>
+            <button class="button" type="button">Cliente</button>
+            <button class="button" type="button">Administrador</button>
+        </main>
 
-            <label>E-mail: </label>
-            <input type="email" placeholder="Digite seu E-mail">
-
-            <label>Senha: </label>
-            <input type="password" placeholder="Digite sua Senha">
-
-            <button type="submit">Enviar</button>
-
-            <p>fiz aqui</p>
-        </form>
+        <!-- Rodapé:Info. da Tela Inicial -->
+        <footer>
+            Aberto todos os dias • 10:30 - 21:30<br>
+            <hr class="linhaB">
+            Rua das Flores, 123 • Centro, São Paulo<br>
+            (11) 99999-0000<br>
+        </footer>
+       
+        
     </div>
 </body>
 </html>
