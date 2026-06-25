@@ -12,8 +12,8 @@
 body{
     min-height: 100vh;
 
-    /* Imagem de fundo */
-    background: url("./img/inicialImg.png") center center/cover no-repeat;
+    /* Fundo degradê */
+    background: linear-gradient(to bottom, #FFA033, #FBC78C);
 
     /* Centraliza tudo na tela */
     display: flex;
@@ -54,16 +54,16 @@ header{
     margin-top: 20px;
 }
 
-/* Texto menor acima do título */
-.acesso-digital{
-    font-size: 0.9rem;
+/* Texto maior acima do título */
+.acesso-adm{
+    font-size: 2rem;
     color: #000000;
 }
 
 /* Título principal */
 .titulo{
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(0.5rem, 3vw, 1rem);
     font-weight: 700;
     letter-spacing: 1px;
     margin: 5px 0;
@@ -79,10 +79,11 @@ header{
 }
 
 /* Texto abaixo do título */
-.subtitulo{
-    font-size: 0.9rem;
+.login{
+    font-size: 1rem;
     color: #000000;
 }
+
 
 /* Área dos botões */
 main{
@@ -92,7 +93,27 @@ main{
     align-items: center;
 }
 
-/* Botões */
+.formulario{
+    width: 250px; 
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 30px;
+}
+
+input{
+    background: linear-gradient(to right, #FFA033, #FBC78C);
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Botão */
 .button{
     width: 220px;
     max-width: 100%;

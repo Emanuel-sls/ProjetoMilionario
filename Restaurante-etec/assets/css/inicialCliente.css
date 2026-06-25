@@ -12,8 +12,8 @@
 body{
     min-height: 100vh;
 
-    /* Imagem de fundo */
-    background: url("./img/inicialImg.png") center center/cover no-repeat;
+    /* Fundo degradê */
+    background: linear-gradient(to bottom, #FFA033, #FBC78C);
 
     /* Centraliza tudo na tela */
     display: flex;
@@ -84,6 +84,7 @@ header{
     color: #000000;
 }
 
+
 /* Área dos botões */
 main{
     display: flex;
@@ -92,7 +93,23 @@ main{
     align-items: center;
 }
 
-/* Botões */
+/* Imagem no centro da tela */
+.imgcentral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}    
+
+/* Img circular */
+.imgcentral img{
+    width: 250px;           
+    height: 250px;         
+    border-radius: 50%;     
+    object-fit: cover;      
+}
+
+/* Botão */
 .button{
     width: 220px;
     max-width: 100%;
