@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="img/android-chrome-192x192.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Restaurante-etec/./assets/./css/./style.css">
     <title>Sabor Vivo</title>
 </head>
 <body>
