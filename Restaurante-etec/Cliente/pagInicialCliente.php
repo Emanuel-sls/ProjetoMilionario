@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inicialCliente.css">
+    <link rel="stylesheet" href="css/inicialCliente.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon192px.png">
     <title>Sabor Vivo</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/android-chrome-192x192.png">
 </head>
 <body>
     <div class="painel">
