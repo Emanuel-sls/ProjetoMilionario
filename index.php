@@ -20,8 +20,8 @@
 
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
-            <button class="button" type="button">Cliente</button>
-            <button class="button" type="button">Administrador</button>
+            <button class="button" type="button" id="btnCliente">Cliente</button>
+            <button class="button" type="button" id="btnAdmin">Administrador</button>
         </main><br>
             
         <!-- Rodapé:Info. da Tela Inicial -->
@@ -34,5 +34,6 @@
        
         
     </div>
+    <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/ligacao_de_paginas.js" defer></script>
 </body>
 </html>
