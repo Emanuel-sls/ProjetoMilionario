@@ -1,6 +1,8 @@
 
 <?php
-echo "TESTE EMANUEL";
+
+
+
 ?>
 
 <!DOCTYPE html>

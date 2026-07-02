@@ -1,3 +1,11 @@
+
+<?php 
+require_once __DIR__ . "/../includes/conexao.php";
+require_once __DIR__ . "/../includes/Login.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +27,13 @@
 
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
-          <form class="formulario">
+          <form class="formulario" method="POST">
                 <input type="text" placeholder="Nome Completo: ">
 
-                <input type="email" placeholder="E-mail: ">
+                <input type="email" name="Email" placeholder="E-mail: ">
 
-                <input type="password" placeholder="Senha: ">
-                <button class="button" type="button">LOGAR</button>
+                <input type="password" name="Senha" placeholder="Senha: ">
+                <button type="submit" name="BtnLogar">LOGAR</button>
           </form>
         </main><br>
 
