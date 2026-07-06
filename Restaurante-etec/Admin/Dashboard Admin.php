@@ -132,7 +132,7 @@
         </main>
     </div><br>
 
-<footer></footer>
+    <footer></footer>
 
 </body>
 </html>
