@@ -15,6 +15,7 @@
                     <a href="#pedido">Pedido</a>
                     <a href="#mesas">Mesas</a>
                     <a href="#relatorios">Relatórios</a>
+                    <a href="#">Cadastrar Funcionário</a>
             </nav>
         </header>
 
