@@ -30,7 +30,9 @@
 
         <!-- Rodapé:Info. da Tela Inicial -->
         <footer>
-             <button class="button" type="button">Ver cardápio</button>
+             <button class="button" type="button" id="btnDashCliente">Ver cardápio</button>
         </footer>
+
+        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/ligacao_dashCliente.js" defer></script>
 </body>
 </html>
