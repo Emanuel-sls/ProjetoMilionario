@@ -7,10 +7,7 @@ function verificarEmail($conection){
 
                 header("Location: pagCadadm.php");
                 exit();
-     
     }
     
     }
-
-
 ?>
