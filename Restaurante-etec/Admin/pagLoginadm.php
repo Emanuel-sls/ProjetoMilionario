@@ -20,12 +20,12 @@
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
           <form class="formulario">
-                <input type="text" placeholder="Nome Completo: ">
+                <input type="text" id="nome" placeholder="Nome Completo: ">
 
-                <input type="email" placeholder="E-mail: ">
+                <input type="email" id="email" placeholder="E-mail: ">
 
-                <input type="password" placeholder="Senha: ">
-                <button class="button" type="button">LOGAR</button>
+                <input type="password" id="senha" placeholder="Senha: ">
+                <button class="button" id="btnLog" type="button">LOGAR</button>
           </form>
         </main><br>
 
@@ -33,5 +33,7 @@
         <!-- Rodapé:Info. da Tela Inicial -->
         <footer>
         </footer>
+
+        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/validacaologADM.js"></script>
 </body>
 </html>
