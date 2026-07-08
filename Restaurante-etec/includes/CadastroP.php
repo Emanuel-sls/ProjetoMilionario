@@ -14,7 +14,7 @@ require_once __DIR__ . "/../includes/MostrarCategoria.php";
         VALUES('nome','idCate','preco','descricao')";
         mysqli_query($conection, $sql);
 
-        echo "Produto Cadastrado";
+        echo "Produto Cadastrado/s";
 
     }
     
