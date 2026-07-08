@@ -75,12 +75,12 @@
             <section id="produto">
                     <h2>Cadastro e Gerenciamento de Produto</h2>
                         <hr>
-                        <form>
+                        <form class="formulario" method="POST">
                             <label>Nome do Produto: </label><br>
-                            <input id="nomeProd" type="text" placeholder="Ex: Entradas, Bebidas"><br>
+                            <input id="nomeProd"  name="nomeProd" type="text" placeholder="Ex: Entradas, Bebidas"><br>
 
                             <p><label>Categoria: </label>
-                            <select id="opcoes" name="opcoes">
+                            <select id="opcoes" name="opcoesCat">
                                 <option value="" disabled selected>Selecione</option>
                                 <option value="opcao1">Entradas</option>
                                 <option value="opcao2">Pratos Principais</option>
@@ -92,15 +92,15 @@
                             <input type="number" id="quantidade" value="1" min="1" max="1000"></div>
 
                             <br><label>Preço: </label>
-                            <input id="precProd" type="text" placeholder="0,00"><br>
+                            <input id="precoProd" name="precProd" type="text" placeholder="0,00"><br>
 
                             <p><label>Descrição: </label><br>
-                            <textarea id="descProd" type="text" placeholder="Ingredientes e Descrição dos Produtos"></textarea></p>
+                            <textarea id="descProd" name="descProd" type="text" placeholder="Ingredientes e Descrição dos Produtos"></textarea></p>
 
                             <label>Imagem: </label><br>
                             <input id="imgProd" type="file" placeholder="Nenhum arquivo escolhido"><br>
 
-                            <p><button type="button">Salvar Produto</button></p>
+                            <p><button type="submit" name="salvarProd">Salvar Produto</button></p>
 
                             <div class="tabela-container">
                                 <table> <h3>Lista de Produtos Cadastrados</h3><br>
