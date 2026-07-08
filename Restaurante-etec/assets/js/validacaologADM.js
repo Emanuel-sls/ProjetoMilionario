@@ -12,7 +12,6 @@ const entradas = [
 function validarEntradas(){
     for(entrada of entradas){
         if(entrada.input.value.trim() === ""){
-            entrada.style.border = "1px solid red";
             return alert(entrada.mensagem);
         }
     }

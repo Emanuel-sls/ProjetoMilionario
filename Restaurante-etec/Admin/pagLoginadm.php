@@ -11,8 +11,8 @@ require_once __DIR__ . "/../includes/Login.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Restaurante-etec/assets/css/loginAdm.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon192px.png">
+    <link rel="stylesheet" href="/PROJETOMILIONARIO/Restaurante-etec/assets/css/loginAdm.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/PROJETOMILIONARIO/Restaurante-etec/assets/img/favicon192px.png">
     <title>Sabor Vivo</title>
 </head>
 <body>
@@ -28,12 +28,12 @@ require_once __DIR__ . "/../includes/Login.php";
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
           <form class="formulario" method="POST">
-                <input type="text" placeholder="Nome Completo: ">
+                <input type="text" id="nome" placeholder="Nome Completo: ">
 
-                <input type="email" name="Email" placeholder="E-mail: ">
+                <input type="email" id="email" name="Email" placeholder="E-mail: ">
 
-                <input type="password" name="Senha" placeholder="Senha: ">
-                <button type="submit" name="BtnLogar">LOGAR</button>
+                <input type="password" id="senha" name="Senha" placeholder="Senha: ">
+                <button type="submit" class="button" id="btnLog" name="BtnLogar">LOGAR</button>
           </form>
         </main><br>
 

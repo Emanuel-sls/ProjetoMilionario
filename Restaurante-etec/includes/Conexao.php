@@ -1,15 +1,17 @@
 <?php 
 
-$conection = mysqli_connect(
-    "localhost",
-    "",
-    "",
-    "restaurante"
-);
+// Conexão com o banco de dados
+//$conection = mysqli_connect(
+    //"localhost",
+    //"",
+    //"",
+    //"restaurante"
+//);
 
-  if(!$conection){
-    die("Erro Na Conexão");
-}
+// Verifica se a conexão foi bem-sucedida
+  //if(!$conection){
+    //die("Erro Na Conexão");
+//}
 
 
 ?>
