@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
 
     /* Imagem de fundo */
-    background: url("/PROJETOMILIONARIO/Restaurante-etec/assets/img/inicialImg.png") center center/cover no-repeat;
+    background: url("Restaurante-etec/assets/img/inicialImg.png") center center/cover no-repeat;
 
     /* Centraliza tudo na tela */
     display: flex;
