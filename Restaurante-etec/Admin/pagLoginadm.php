@@ -40,7 +40,6 @@ require_once __DIR__ . "/../includes/Login.php";
 
         <!-- Rodapé:Info. da Tela Inicial -->
         <footer>
-            <a href="#">Se não tiver, Cadastre-se</a>
         </footer>
 </body>
 </html>
