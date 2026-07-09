@@ -41,6 +41,6 @@
        
         
     </div>
-    <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/ligacao_de_paginas.js" defer></script>
+    <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/ligacao_index.js" defer></script>
 </body>
 </html>

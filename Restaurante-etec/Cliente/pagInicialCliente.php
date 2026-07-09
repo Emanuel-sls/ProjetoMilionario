@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/inicialCliente.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon192px.png">
+    <link rel="stylesheet" href="/PROJETOMILIONARIO/Restaurante-etec/assets/css/inicialCliente.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/PROJETOMILIONARIO/Restaurante-etec/assets/img/android-chrome-192x192.png">
     <title>Sabor Vivo</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
             <div class="imgcentral">
-                <img src="/img/imgcentral.png" alt="icon">
+                <img src="/PROJETOMILIONARIO/Restaurante-etec/assets/img/imgcentral.png" alt="icon">
             </div><br>
             Aberto todos os dias • 10:30 - 21:00<br>
             <hr class="linhaB">
