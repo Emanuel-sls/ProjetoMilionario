@@ -1,3 +1,12 @@
+
+<?php
+require_once __DIR__ . "/../includes/Conexao.php";
+require_once __DIR__ . "/../includes/CadastroCategoria.php";
+require_once __DIR__ . "/../includes/CadastroP.php";
+require_once __DIR__ . "/../includes/DeleteCategoria.php";
+require_once __DIR__ . "/../includes/DeleteProduto.php";
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,7 +29,6 @@
         </header>
 
         <div class="banner">
-            <img src="/PROJETOMILIONARIO/Restaurante-etec/assets/img/adm.png" alt="banner">
         </div>
 
         <div class="laranjTransp">
@@ -28,14 +36,14 @@
                 <section id="categoria">
                     <h2>Cadastro e Gerenciamento de Categorias</h2>
                     <hr>
-                    <form>
+                    <form class="formulario" method="POST">
                         <label>Nome da Categoria: </label><br>
-                        <input id="nomeCateg" type="text" placeholder="Ex: Entradas, Bebidas"><br>
+                        <input id="nomeCateg"  name="nomeCateg"  type="text" placeholder="Ex: Entradas, Bebidas"><br>
 
                         <p><label>Descrição: </label><br>
-                        <textarea id="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
+                        <textarea id="descCateg" name="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
 
-                        <p><button type="button">Salvar Categoria</button></p>
+                        <p><button type="submit" name="SalvarCat">Salvar Categoria</button></p>
 
                         <table>
                             <thead>
@@ -48,22 +56,8 @@
                             </thead>
 
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Entradas</td>
-                                    <td>Pratos Para Inicial a Refeição</td>
-                                    <td><button type="button">Editar</button> <button type="button">Excluir</button></td>
-                                </tr>
+                                <?php require_once __DIR__ . "/../includes/CategoriasTabel.php";  ?>  
                             </tbody>
-
-                            <tfoot>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Pratos Principais</td>
-                                    <td>Pratos Completos</td>
-                                    <td><button type="button">Editar</button> <button type="button">Excluir</button></td>
-                                </tr>
-                            </tfoot>
 
                         </table>
                     </form>
@@ -81,10 +75,8 @@
 
                             <p><label>Categoria: </label>
                             <select id="opcoes" name="opcoesCat">
-                                <option value="" disabled selected>Selecione</option>
-                                <option value="opcao1">Entradas</option>
-                                <option value="opcao2">Pratos Principais</option>
-                                <option value="opcao3">Sobremesas</option>
+                                <option value="">Selecione uma categoria</option>
+                                <?php require_once __DIR__ . "/../includes/MostrarCategoria.php"; ?> 
                             </select></p><br>
 
                             <label>Estoque: </label>
@@ -92,7 +84,7 @@
                             <input type="number" id="quantidade" value="1" min="1" max="1000"></div>
 
                             <br><label>Preço: </label>
-                            <input id="precoProd" name="precProd" type="text" placeholder="0,00"><br>
+                            <input id="precoProd" name="precoProd" type="text" placeholder="0,00"><br>
 
                             <p><label>Descrição: </label><br>
                             <textarea id="descProd" name="descProd" type="text" placeholder="Ingredientes e Descrição dos Produtos"></textarea></p>
@@ -110,52 +102,16 @@
                                             <th>Nome</th>
                                             <th>Descrição</th>
                                             <th>Preço</th>
-                                            <th>Estoque</th>
+                                            <th>Categoria</th>
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Torrada</td>
-                                            <td>Pratos Para Inicial a Refeição</td>
-                                            <td>8,00</td>
-                                            <td>N/A</td>
-                                            <td><button type="button">Editar</button> 
-                                                <button type="button">Excluir</button>
-                                            </td>
-
-                                        </tr>
+                                        <?php require_once __DIR__ . "/../includes/ProdutosTabel.php";  ?>  
+                                     
                                     </tbody>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Fanta</td>
-                                            <td>Refrigerante em lata</td>
-                                            <td>5,75</td>
-                                            <td>150</td>
-                                            <td><button type="button">Editar</button> 
-                                                <button type="button">Excluir</button>
-                                            </td>
-
-                                        </tr>
-                                    </tbody>
-
-                                    <tfoot>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Feijoada</td>
-                                            <td>Pratos Completos</td>
-                                            <td>28,90</td>
-                                            <td>N/A</td>
-                                            <td><button type="button">Editar</button> 
-                                                <button type="button">Excluir</button>
-                                            </td>
-
-                                        </tr>
-                                    </tfoot>
 
                                 </table>
                             </div>

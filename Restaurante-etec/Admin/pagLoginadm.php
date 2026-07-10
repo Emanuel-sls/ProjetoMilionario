@@ -11,7 +11,7 @@ require_once __DIR__ . "/../includes/Login.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/PROJETOMILIONARIO/Restaurante-etec/assets/css/loginAdm.css">
+    <link rel="stylesheet" href="/PROJETOMILIONARIO/restaurante-etec/assets/css/loginAdm.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/PROJETOMILIONARIO/Restaurante-etec/assets/img/favicon192px.png">
     <title>Sabor Vivo</title>
 </head>
