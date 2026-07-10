@@ -1,9 +1,10 @@
 
 <?php
 require_once __DIR__ . "/../includes/Conexao.php";
-require_once __DIR__ . "/../includes/Conexao.php";
 require_once __DIR__ . "/../includes/CadastroCategoria.php";
 require_once __DIR__ . "/../includes/CadastroP.php";
+require_once __DIR__ . "/../includes/DeleteCategoria.php";
+require_once __DIR__ . "/../includes/DeleteProduto.php";
 
  ?>
 <!DOCTYPE html>
@@ -11,7 +12,7 @@ require_once __DIR__ . "/../includes/CadastroP.php";
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/PROJETOMILIONARIO/Restaurante-etec/assets/css/admstyle.css">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon192px.png">
         <title>Sabor Vivor</title>
     </head>
@@ -101,52 +102,16 @@ require_once __DIR__ . "/../includes/CadastroP.php";
                                             <th>Nome</th>
                                             <th>Descrição</th>
                                             <th>Preço</th>
-                                            <th>Estoque</th>
+                                            <th>Categoria</th>
                                             <th>Ações</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Torrada</td>
-                                            <td>Pratos Para Inicial a Refeição</td>
-                                            <td>8,00</td>
-                                            <td>N/A</td>
-                                            <td><button type="button">Editar</button> 
-                                                <button type="button">Excluir</button>
-                                            </td>
-
-                                        </tr>
+                                        <?php require_once __DIR__ . "/../includes/ProdutosTabel.php";  ?>  
+                                     
                                     </tbody>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Fanta</td>
-                                            <td>Refrigerante em lata</td>
-                                            <td>5,75</td>
-                                            <td>150</td>
-                                            <td><button type="button">Editar</button> 
-                                                <button type="button">Excluir</button>
-                                            </td>
-
-                                        </tr>
-                                    </tbody>
-
-                                    <tfoot>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Feijoada</td>
-                                            <td>Pratos Completos</td>
-                                            <td>28,90</td>
-                                            <td>N/A</td>
-                                            <td><button type="button">Editar</button> 
-                                                <button type="button">Excluir</button>
-                                            </td>
-
-                                        </tr>
-                                    </tfoot>
 
                                 </table>
                             </div>
