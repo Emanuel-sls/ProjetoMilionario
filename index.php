@@ -20,7 +20,7 @@
         <!-- Cabeçalho: Título e Subtítulo da Tela Inicial -->
         <header>
             <p class="acesso-digital">Acesso digital</p>
-            <h1 class="titulo">Sabor Vivo</h1>
+            <h1 class="titulo">Restaurante</h1>
             <hr class="linhaA">
             <p class="subtitulo">Fresco, Feito e Servido</p>
         </header><br>
