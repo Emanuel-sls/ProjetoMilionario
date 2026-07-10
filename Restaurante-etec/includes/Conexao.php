@@ -7,10 +7,9 @@ $conection = mysqli_connect(
     "restaurante"
 );
 
-// Verifica se a conexão foi bem-sucedida
-  //if(!$conection){
-    //die("Erro Na Conexão");
-//}
+   if(!$conection){
+    die("Erro Na Conexão");
+}
 
 
 ?>
