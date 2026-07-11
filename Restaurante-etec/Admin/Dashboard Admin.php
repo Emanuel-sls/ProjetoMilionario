@@ -29,6 +29,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
         </header>
 
         <div class="banner">
+            <img src="/ProjetoMilionario/Restaurante-etec/assets/img/adm.png" alt="Banner do Restaurante">
         </div>
 
         <div class="laranjTransp">
