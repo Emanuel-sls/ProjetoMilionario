@@ -35,7 +35,7 @@
                         <p><label>Descrição: </label><br>
                         <textarea id="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
 
-                        <p><button type="button">Salvar Categoria</button></p>
+                        <p><button type="button" id="btnSalvCategoria" >Salvar Categoria</button></p>
 
                         <table>
                             <thead>
@@ -166,5 +166,7 @@
 
         <footer></footer>
 
+
+        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/interacoesDashAdmin.js"></script>
     </body>
 </html>
