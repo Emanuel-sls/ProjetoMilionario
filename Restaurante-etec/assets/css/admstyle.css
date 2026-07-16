@@ -142,7 +142,7 @@ textarea {
     resize: none;
 }
 
-button[type="button"] {
+#btn1, #btn2 {
     background-color: #28c740;
     color: white;
     border: none;
@@ -155,7 +155,7 @@ button[type="button"] {
     transition: background 0.2s ease;
 }
 
-button[type="button"]:hover {
+#btn1:hover, #btn2:hover {
     background-color: #22a836;
 }
 
