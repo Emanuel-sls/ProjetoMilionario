@@ -29,6 +29,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
         </header>
 
         <div class="banner">
+            <img src="../assets/img/adm.png" alt="banner">
         </div>
 
         <div class="laranjTransp">
@@ -43,7 +44,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                         <p><label>Descrição: </label><br>
                         <textarea id="descCateg" name="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
 
-                        <p><button type="submit" name="SalvarCat" id="btnSalvCategoria" >Salvar Categoria</button></p>
+                        <p><button id="btn1" type="submit" name="SalvarCat" id="btnSalvCategoria" >Salvar Categoria</button></p>
 
                         <table>
                             <thead>
@@ -92,7 +93,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                             <label>Imagem: </label><br>
                             <input id="imgProd" type="file" placeholder="Nenhum arquivo escolhido"><br>
 
-                            <p><button type="submit" name="salvarProd">Salvar Produto</button></p>
+                            <p><button id="btn2" type="submit" name="salvarProd">Salvar Produto</button></p>
 
                             <div class="tabela-container">
                                 <table> <h3>Lista de Produtos Cadastrados</h3><br>

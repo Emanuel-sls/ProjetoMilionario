@@ -1,5 +1,6 @@
 
 <?php
+/*
 require_once __DIR__ . "/../includes/Conexao.php";
 
 
@@ -28,5 +29,5 @@ if(isset($_POST["ExcluirCad"]))
     exit();
 
 }
-
+*/
 ?>
