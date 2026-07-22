@@ -13,7 +13,11 @@ body{
     min-height: 100vh;
 
     /* Imagem de fundo */
+<<<<<<< HEAD
     background: url("../img/inicialimg.png") center center/cover no-repeat;
+=======
+    background: url("../img/inicialImg.png") center center/cover no-repeat;
+>>>>>>> 530c61f55bd6da3cb1ea563b3ac452ad0b867797
 
     /* Centraliza tudo na tela */
     display: flex;
