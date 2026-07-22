@@ -142,11 +142,10 @@ textarea {
     resize: none;
 }
 
-<<<<<<< HEAD
-button[type="submit"] {
-=======
+
+button[type="submit"] 
 #btn1, #btn2 {
->>>>>>> 530c61f55bd6da3cb1ea563b3ac452ad0b867797
+
     background-color: #28c740;
     color: white;
     border: none;
@@ -159,11 +158,9 @@ button[type="submit"] {
     transition: background 0.2s ease;
 }
 
-<<<<<<< HEAD
-button[type="submit"]:hover {
-=======
+
+button[type="submit"]:hover 
 #btn1:hover, #btn2:hover {
->>>>>>> 530c61f55bd6da3cb1ea563b3ac452ad0b867797
     background-color: #22a836;
 }
 

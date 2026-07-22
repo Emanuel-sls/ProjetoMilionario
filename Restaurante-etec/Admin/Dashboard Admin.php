@@ -29,11 +29,9 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
         </header>
 
         <div class="banner">
-<<<<<<< HEAD
+
             <img src="/ProjetoMilionario/Restaurante-etec/assets/img/adm.png" alt="Banner do Restaurante">
-=======
             <img src="../assets/img/adm.png" alt="banner">
->>>>>>> 530c61f55bd6da3cb1ea563b3ac452ad0b867797
         </div>
 
         <div class="laranjTransp">
@@ -49,7 +47,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                         <textarea id="descCateg" name="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
 
                         <p><button id="btn1" type="submit" name="SalvarCat" id="btnSalvCategoria" >Salvar Categoria</button></p>
-
+                        <p><button id="btn2" type="submit" name="EditarCat">Editar Categoria</button></p>
                         <table>
                             <thead>
                                 <tr>
@@ -98,6 +96,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                             <input id="imgProd" type="file" placeholder="Nenhum arquivo escolhido"><br>
 
                             <p><button id="btn2" type="submit" name="salvarProd">Salvar Produto</button></p>
+                            <p><button id="btn2" type="submit" name="salvarProd">Editar Produto</button></p>
 
                             <div class="tabela-container">
                                 <table> <h3>Lista de Produtos Cadastrados</h3><br>
@@ -123,6 +122,150 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                         </form>
                 </section>
             </main>
+
+            <main>
+            <section id="pedido">                           
+                            <div class="tabela-container">
+                                <table> <h3>Gerenciamento de Pedidos</h3><br>
+                                    <hr>
+                                    <thead>
+                                        <tr>
+                                            <th>N° de Pedidos</th>
+                                            <th>Mesa</th>
+                                            <th>Data/Hora</th>
+                                            <th>Preço</th>
+                                            <th>Status</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>05</td>
+                                            <td>18/06/2026 11:00</td>
+                                            <td>48,00</td>
+                                            <td> 
+                                                <select id="opcoes" name="opcoes">
+                                                    <option value="" disabled selected>Selecione</option>
+                                                    <option value="opcao1">Preparando</option>
+                                                    <option value="opcao2">Pendente</option>
+                                                    <option value="opcao3">Finalizado</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button type="button">Cancelar</button>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>08</td>
+                                            <td>18/06/2026 13:00</td>
+                                            <td>58,90</td>
+                                            <td> 
+                                                <select id="opcoes" name="opcoes">
+                                                    <option value="" disabled selected>Selecione</option>
+                                                    <option value="opcao1">Preparando</option>
+                                                    <option value="opcao2">Pendente</option>
+                                                    <option value="opcao3">Finalizado</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button type="button">Cancelar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                </section>
+            </main>
+
+            <main>
+                <section id="mesas">
+                    <h2>Controle de Mesas</h2>
+                    <hr>
+                    <form>
+                        <label>Números de Mesas: </label><br>
+                        <input id="nomeCateg" type="text" placeholder="Ex: Entradas, Bebidas"><br>
+
+                        <p><label>Capacidade: </label><br>
+                        <textarea id="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
+
+                        <p><button type="button">Cadastrar Mesa</button></p>
+
+                        <div class="mesaLivre">
+                            <h3>Mesa1</h3>
+
+                            <p>Capacidade: 6</p>
+
+                            <div class="status">
+                               <select id="opcoes" name="opcoes">
+                                    <option value="" disabled selected>Selecione:</option>
+                                    <option value="opcao1">Livre</option>
+                                    <option value="opcao2">Reservado</option>
+                                    <option value="opcao3">Ocupado</option>
+                                </select>
+                            </div>
+                        </div><br>
+
+                        <div class="mesaLivre">
+                            <h3>Mesa2</h3>
+
+                            <p>Capacidade: 4</p>
+
+                            <div class="status">
+                                <select id="opcoes" name="opcoes">
+                                    <option value="" disabled selected>Selecione:</option>
+                                    <option value="opcao1">Livre</option>
+                                    <option value="opcao2">Reservado</option>
+                                    <option value="opcao3">Ocupado</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+
+            </main>
+
+            <section class="relatorios">
+
+                <h2>Relatórios Básicos</h2>
+
+                <hr>
+
+                <div class="cards-relatorios">
+
+                    <div class="card-relatorio">
+                        <p>Total de Pedidos<br>hoje:</p>
+                        <strong>28</strong>
+                    </div>
+
+                    <div class="card-relatorio">
+                        <p>Faturamento<br>no dia:</p>
+                        <strong>R$ 1.245,80</strong>
+                    </div>
+
+                    <div class="card-relatorio">
+                        <p>Mesas ocupadas:</p>
+                        <strong>6 / 12</strong>
+                    </div>
+
+                    <div class="card-relatorio">
+                        <p>Produto mais<br>vendido:</p>
+                        <strong>Feijoada<br>Completa</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
         </div><br>
 
         <footer></footer>
