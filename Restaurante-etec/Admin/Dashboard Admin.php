@@ -29,7 +29,8 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
         </header>
 
         <div class="banner">
-            <img src="adm.png" alt="banner">
+            <img src="/ProjetoMilionario/Restaurante-etec/assets/img/adm.png" alt="Banner do Restaurante">
+            <img src="../assets/img/adm.png" alt="banner">
         </div>
 
         <div class="laranjTransp">
@@ -239,7 +240,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
 
             
 
-                        <section class="relatorios">
+                        <section id="relatorios" class="relatorios">
 
                             <h2>Relatórios Básicos</h2>
 
