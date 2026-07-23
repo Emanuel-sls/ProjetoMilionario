@@ -19,6 +19,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
     <body>
         <header>
             <nav>ADM:
+                    <a onclick="irCategoria()">Categoria</a>
                     <a href="#produto">Produto</a>
                     <a href="#pedido">Pedido</a>
                     <a href="#mesas">Mesas</a>
