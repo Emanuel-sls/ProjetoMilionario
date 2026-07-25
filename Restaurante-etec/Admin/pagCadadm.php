@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Restaurante-etec/assets/css/cadAdm.css">
+    <link rel="stylesheet" href="../assets/css/cadAdm.css">
     <title>Sabor Vivo</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon192px.png">
 </head>
@@ -34,7 +34,7 @@
 
         <!-- Rodapé:Info. da Tela Inicial -->
         <footer>
-            <a href="#">Se não tiver, Cadastre-se</a>
+            
         </footer>
 </body>
 </html>
