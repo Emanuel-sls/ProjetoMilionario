@@ -1,6 +1,6 @@
 <<?php 
 
-
+/*
 function verificarEmail($conection){
 
     if(isset ($_GET["btnCliente"] )){
@@ -10,4 +10,5 @@ function verificarEmail($conection){
     }
     
     }
+    */
 ?>

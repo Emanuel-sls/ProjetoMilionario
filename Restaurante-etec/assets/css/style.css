@@ -13,10 +13,9 @@ body{
     min-height: 100vh;
 
     /* Imagem de fundo */
-   
-  background-image: url("../img/inicialImg.png");
-  background-size: cover;
-  background-position: center;
+
+
+    background: url("../img/inicialImg.png") center center/cover no-repeat;
 
     /* Centraliza tudo na tela */
     display: flex;
