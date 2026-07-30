@@ -19,7 +19,7 @@ body {
 }
 
 
-/* Cabeçalho*/
+/* --- CABEÇALHO --- */
 header {
     background: linear-gradient(90deg, #ffd280, #ff9500);
     padding: 15px 20px;
@@ -27,8 +27,6 @@ header {
     border-radius: 0;
     width: 100%;
 }
-
-/* Navegação */
 
 nav {
     display: flex;
@@ -52,7 +50,7 @@ nav a:not(:last-child)::after {
     color: #222;
 }
 
-/* Banner  */
+/* --- BANNER --- */
 .banner {
     width: 100%;
     max-width: 100%;
@@ -71,41 +69,41 @@ nav a:not(:last-child)::after {
 }
 
 .laranjTransp {
-    background-color: #fbc78c9a;
+    background-color: #ffbf779a;
     border: none;
-    width: 95%; 
-    max-width: 1300px; 
+    width: 95%; /* Alterado de valor fixo para percentual */
+    max-width: 1300px; /* Mantém limite máximo */
     height: auto;
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
     margin-top: -70px;
     border-radius: 15px;
-    padding: 15px; 
+    padding: 15px; /* Adiciona espaçamento interno */
 }
 
-/* Conteúdo Principal */
+/* --- CONTEÚDO PRINCIPAL --- */
 main {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px; 
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 30px; /* Espaçamento entre seções */
     flex: 1;
     padding: 20px;
     margin-top: 40px;
     width: 100%;
 }
 
-/* Seções */
-
 section#categoria,
-section#produto {
+section#produto,
+section#pedido,
+section#mesas {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 8px;
     width: 100%;
     max-width: 650px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
@@ -129,12 +127,12 @@ label {
 
 input, textarea {
     width: 100%;
-    padding: 10px; 
+    padding: 10px; /* Aumentado para melhor toque em celular */
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 15px;
     font-family: inherit;
-    font-size: 16px; 
+    font-size: 16px; /* Evita zoom automático no iOS */
 }
 
 textarea {
@@ -142,31 +140,33 @@ textarea {
     resize: none;
 }
 
-#btn1, #btn2 {
+button[type="button"] {
     background-color: #28c740;
     color: white;
     border: none;
-    padding: 12px 15px;
+    padding: 12px 15px; /* Aumentado para melhor toque */
     border-radius: 4px;
     width: 100%;
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 25px;
     transition: background 0.2s ease;
+
 }
 
-#btn1:hover, #btn2:hover {
+button[type="button"]:hover {
     background-color: #22a836;
 }
 
-/* Tabelas */
 .tabela-container {
     width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 table {
     width: 100%;
+    min-width: 600px;
     border-collapse: collapse;
 }
 
@@ -184,16 +184,17 @@ th {
     font-weight: 600;
 }
 
-/* Coluna dos botões */
 td:last-child {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
 }
 
 table button {
-    flex: 1;
-    padding: 10px 16px;
-    font-size: 14px;
+    width: 90px;
+    padding: 8px;
+    font-size: 13px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -217,7 +218,93 @@ table button:last-child:hover {
     background-color: #cc2e29;
 }
 
-/* Rodapé */
+.mesaLivre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.relatorios {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 30px auto;
+
+    padding: 10px;
+
+    background-color: #ffffff;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.relatorios h2 {
+    font-size: 20px;
+
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+.relatorios hr {
+    border: none;
+
+    border-top: 2px solid #e5e5e5;
+
+    margin-bottom: 12px;
+}
+
+.cards-relatorios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+    gap: 10px;
+}
+
+.card-relatorio {
+    min-height: 67px;
+
+    padding: 8px 5px;
+
+    background-color: #e5e8eb;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.card-relatorio p {
+    margin: 0 0 5px;
+
+    font-size: 17px;
+
+    line-height: 1.1;
+
+    color: #555;
+}
+
+.card-relatorio strong {
+    font-size: 20px;
+
+    color: #555;
+}
+
+/* RODAPÉ */
 footer {
     background: linear-gradient(90deg, #ffd280, #ff9500);
     width: 100%;
@@ -234,7 +321,9 @@ footer {
 }
 
 
-/* Responsividade */
+
+
+
 
 @media (max-width: 992px) {
     .laranjTransp {
@@ -278,23 +367,22 @@ footer {
     }
 
     nav {
-        font-size: 15px;
-        gap: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    nav a:not(:last-child)::after {
+        content: " |";
+        margin-left: 8px;
     }
 
     .laranjTransp {
         margin-top: -20px;
         width: 98%;
         border-radius: 10px;
-    }
-
-    th, td {
-        padding: 8px 6px;
-        font-size: 14px;
-    }
-
-    table button {
-        padding: 5px 8px;
-        font-size: 13px;
     }
 }

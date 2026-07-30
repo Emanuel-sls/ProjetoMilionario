@@ -14,8 +14,8 @@ body{
 
     /* Imagem de fundo */
 
+    background: url("../img/inicialimg.png") center center/cover no-repeat;
 
-    background: url("../img/inicialImg.png") center center/cover no-repeat;
 
     /* Centraliza tudo na tela */
     display: flex;
