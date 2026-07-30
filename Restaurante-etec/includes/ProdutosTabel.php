@@ -1,5 +1,5 @@
 <?php
-/*
+
 require_once __DIR__ . "/Conexao.php";
 
 $sql = "SELECT * FROM produtos";
@@ -33,5 +33,5 @@ while($produto = mysqli_fetch_assoc($resultado)){
     </tr>
     ";
 }
-    */
+    
 ?>

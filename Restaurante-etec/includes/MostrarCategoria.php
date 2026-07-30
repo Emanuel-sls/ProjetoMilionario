@@ -1,5 +1,5 @@
 <?php 
-/*
+
 require_once __DIR__ . "/../includes/Conexao.php";
 
  $sql = "SELECT * FROM categorias";
@@ -13,6 +13,6 @@ require_once __DIR__ . "/../includes/Conexao.php";
     ";
 }
 
-*/
+
 
 ?>

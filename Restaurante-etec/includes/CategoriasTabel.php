@@ -1,5 +1,5 @@
 <?php
-/*
+
 require_once __DIR__ . "/Conexao.php";
 
 $sql = "SELECT * FROM categorias";
@@ -11,8 +11,25 @@ while($categoria = mysqli_fetch_assoc($resultado)){
             <td>{$categoria['idCate']}</td>
             <td>{$categoria['nome']}</td>
             <td>{$categoria['descicao']}</td>
+
             <td>
-                <form method='POST'>
+
+                <form method='GET' style='display:inline;'>
+
+                    <input
+                        type='hidden'
+                        name='idCate'
+                        value='{$categoria['idCate']}'
+                    >
+
+                    <button type='submit' name='EditarCad'>
+                        Editar
+                    </button>
+
+                </form>
+
+                <form method='POST' style='display:inline;'>
+
                     <input
                         type='hidden'
                         name='idCate'
@@ -23,12 +40,11 @@ while($categoria = mysqli_fetch_assoc($resultado)){
                         Excluir
                     </button>
 
-                    <button type='submit' name='EditarCad'>
-                        Editar
-                    </button>
                 </form>
+
             </td>
+
         </tr>
     ";
 }
-    */
+?>
