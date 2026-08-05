@@ -19,18 +19,17 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
     <body>
         <header>
             <nav>ADM:
-                <a href="#categoria">Categoria</a>
-                <a href="#produto">Produto</a>
-                <a href="#pedido">Pedido</a>
-                <a href="#mesas">Mesas</a>
-                <a href="#relatorios">Relatórios</a>
-                <a href="#">Cadastrar Funcionário</a>
+                    <a href="#" id="toCategorias">Categoria</a>
+                    <a href="#" id="toProdutos">Produto</a>
+                    <a href="#" id="toPedidos">Pedido</a>
+                    <a href="#" id="toMesas">Mesas</a>
+                    <a href="#" id="toRelatorios">Relatórios</a>
+                    <a href="#" id="toCadastro">Cadastrar Funcionário</a>
             </nav>
         </header>
 
         <div class="banner">
             <img src="/ProjetoMilionario/Restaurante-etec/assets/img/adm.png" alt="Banner do Restaurante">
-            <img src="../assets/img/adm.png" alt="banner">
         </div>
 
         <div class="laranjTransp">
@@ -81,6 +80,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                                 <p><label>Categoria: </label>
                                     <select id="opcoes" name="opcoesCat">
                                         <option value="">Selecione uma categoria</option>
+                                        <option value="1">aaa</option>
                                         <?php require_once __DIR__ . "/../includes/MostrarCategoria.php"; ?> 
                                     </select>
                                 </p><br>
@@ -102,8 +102,8 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                                 <label>Imagem: </label><br>
                                 <input id="imgProd" type="file" placeholder="Nenhum arquivo escolhido"><br>
 
-                                <p><button id="btn2" type="submit" name="salvarProd">Salvar Produto</button></p>
-                                <p><button id="btn2" type="submit" name="salvarProd">Editar Produto</button></p>
+                                <p><button id="btn3" type="submit" name="salvarProd">Salvar Produto</button></p>
+                                <p><button id="btn4" type="submit" name="salvarProd">Editar Produto</button></p>
                                 
                                 <div class="tabela-container">
                                     <table> <h3>Lista de Produtos Cadastrados</h3><br>
@@ -197,12 +197,12 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                             <hr>
                             <form>
                                 <label>Números de Mesas: </label><br>
-                                <input id="nomeCateg" type="text" placeholder="Ex: Entradas, Bebidas"><br>
+                                <input id="numMesa" type="text" placeholder="Ex: Entradas, Bebidas"><br>
 
                                 <p><label>Capacidade: </label><br>
-                                <textarea id="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
+                                <textarea id="descMesa" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
 
-                                <p><button type="button">Cadastrar Mesa</button></p>
+                                <p><button id="btn5" type="submit">Cadastrar Mesa</button></p>
 
                                 <div class="mesaLivre">
                                     <h3>Mesa1</h3>
@@ -299,8 +299,9 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
 
             </main>
 
+
         <footer></footer>
 
-        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/interacoesDashAdmin.js"></script>
+        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/interacoesDashAdmin.js" defer></script>
     </body>
 </html>
