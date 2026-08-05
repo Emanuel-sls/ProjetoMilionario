@@ -320,6 +320,84 @@ footer {
     z-index: 1000;
 }
 
+.mensagens-sistema{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.card-mensagem{
+    background-color: #ffffff;
+    width: 230px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.card-mensagem h3{
+    margin: 15px 0 10px;
+    color: #222;
+}
+
+.card-mensagem p{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.icone-sucesso,
+.icone-erro{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 70px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.icone-sucesso{
+    border: 2px solid #28c740;
+    color: #28c740;
+}
+
+.icone-erro{
+    border: 2px solid #e53935;
+    color: #e53935;
+}
+
+.btn-sucesso,
+.btn-erro{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-sucesso{
+    background-color: #28c740;
+}
+
+.btn-sucesso:hover{
+    background-color: #22a836;
+}
+
+.btn-erro{
+    background-color: #e53935;
+}
+
+.btn-erro:hover{
+    background-color: #c62828;
+}
+
 
 /* --- AJUSTES RESPONSIVOS POR TAMANHO DE TELA --- */
 @media (max-width: 992px) {
@@ -356,6 +434,25 @@ footer {
     section h2 {
         font-size: 20px;
     }
+
+    .mensagens-sistema{
+        gap: 15px;
+        padding-bottom: 90px;
+    }
+
+    .card-mensagem{
+        width: 100%;
+        max-width: 300px;
+        padding: 22px 18px;
+    }
+
+    .card-mensagem h3{
+        font-size: 22px;
+    }
+
+    .card-mensagem p{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -381,5 +478,32 @@ footer {
         margin-top: -20px;
         width: 98%;
         border-radius: 10px;
+    }
+
+    .mensagens-sistema{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 90px;
+    }
+
+    .card-mensagem{
+        width: 100%;
+        max-width: 280px;
+        padding: 20px 15px;
+    }
+
+    .icone-sucesso,
+    .icone-erro{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 28px;
+    }
+
+    .btn-sucesso,
+    .btn-erro{
+        font-size: 14px;
+        padding: 11px;
     }
 }
