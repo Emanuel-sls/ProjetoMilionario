@@ -20,14 +20,9 @@
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
           <form class="formulario">
-                <input type="text" placeholder="Nome Completo: ">
 
-                <input type="text" name="cpf" inputmode="numeric" maxlength="14" placeholder="CPF: ">
 
-                <input type="email" placeholder="E-mail: ">
 
-                <input type="password" placeholder="Senha: ">
-                <button class="button" type="button">CADASTRAR</button>
           </form>
         </main><br>
 
