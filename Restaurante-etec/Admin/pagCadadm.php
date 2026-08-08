@@ -20,9 +20,14 @@
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
           <form class="formulario">
+                <input id="nomeComp" type="text" placeholder="Nome Completo: ">
 
+                <input id="cpf" type="text" name="cpf" inputmode="numeric" maxlength="14" placeholder="CPF: ">
 
+                <input id="email" type="email" placeholder="E-mail: ">
 
+                <input id="senha" type="password" placeholder="Senha: ">
+                <button id="cadastrar" class="button" type="button">CADASTRAR</button>
           </form>
         </main><br>
 
@@ -31,5 +36,7 @@
         <footer>
             
         </footer>
+
+        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/cadastro_admin.js"></script>
 </body>
 </html>
