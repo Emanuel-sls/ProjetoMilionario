@@ -24,6 +24,7 @@ toCadastro.addEventListener("click", () => {
     location.href="pagCadadm.php";
 });
 
+
 //widgetsde mensagem de sucesso e erro
 const mensagemContainer = document.getElementById("mensagemContainer");
 
@@ -64,7 +65,7 @@ function msgErro(){
 function validarCampos(campos){
     for(const entrada of campos){
         if(entrada.input.value.trim() === ""){
-        
+            campo_msgVazio.textContent = entrada.mensagem;
             msgErro();
             return false;
         }
@@ -97,21 +98,21 @@ const btn_cadastrarMesa = document.getElementById("btn5");
 
 //estruturas de dados para validação de campos
 const camposCategorias = [
-    {input: nomeCategoria, mensagem: "O nome é obrigatório!"},
-    {input: descCategoria, mensagem: "A descrição é obrigatória!"}
+    {input: nomeCategoria, mensagem: "O nome da categoria é obrigatório!"},
+    {input: descCategoria, mensagem: "A descrição da categoria é obrigatória!"}
 ];
 
 const camposProdutos = [
     {input: nomeProd, mensagem: "O nome do produto é obrigatório!"},
-    {input: selecCateg, mensagem: "A categoria é obrigatória!"},
-    {input: quantidade, mensagem: "A quantidade é obrigatória!"},
-    {input: preco, mensagem: "O preço é obrigatório!"},
-    {input: descProd, mensagem: "A descrição de obrigatória!"}
+    {input: selecCateg, mensagem: "A categoria do produto é obrigatória!"},
+    {input: quantidade, mensagem: "A quantidade do produto é obrigatória!"},
+    {input: preco, mensagem: "O preço do produto é obrigatório!"},
+    {input: descProd, mensagem: "A descrição do produto é obrigatória!"}
 ];
 
 const camposMesa = [
-    {input: numeroDeMesa, mensagem: "O numero de mesa é obrigatório!"},
-    {input: descMesa, mensagem: "A descrição de obrigatória!"}
+    {input: numeroDeMesa, mensagem: "O número da mesa é obrigatório!"},
+    {input: descMesa, mensagem: "A descrição da mesa é obrigatória!"}
 ];
 
 

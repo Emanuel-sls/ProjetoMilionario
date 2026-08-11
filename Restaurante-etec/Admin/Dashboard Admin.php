@@ -280,7 +280,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
 
                         <h3>Sucesso!</h3>
 
-                        <p id="campo_msgVazio"></p>
+                        
 
                         <button class="btn-sucesso">Continuar</button>
                     </div>
