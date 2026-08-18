@@ -290,6 +290,7 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
 
                         <h3>Erro!</h3>
 
+                        <p id="campo_msgVazio"></p>
                         <button class="btn-erro">Tentar novamente</button>
                     </div>
 
