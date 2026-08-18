@@ -129,6 +129,19 @@ nav a:not(:last-child)::after {
     z-index: 2;
 }
 
+/*Botão Selecionar Mesa*/
+
+.selectMesa{
+    background: #ff9500;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    align-items: center;
+    outline: none;
+}
+
 /* SEÇÕES */
 
 section#entradas,

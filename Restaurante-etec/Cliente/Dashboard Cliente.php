@@ -25,6 +25,14 @@
             </div>
 
         <div class="laranjTransp">
+
+            <select class="selectMesa" id="option" name="option">
+                <option value="" disabled selected >Selecione a Mesa</option>
+                <option value="mesa1">Mesa1</option>
+                <option value="mesa2">Mesa2</option>
+                <option value="mesa3">Mesa3</option>
+            </select>
+
             <main>
                 <section id="entradas">
                     <h2>Entradas</h2>
