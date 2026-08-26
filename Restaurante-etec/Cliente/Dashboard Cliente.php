@@ -21,7 +21,6 @@
 
             <div class="banner">
                 <img src="/ProjetoMilionario/Restaurante-etec/assets/img/cliente.png" alt="Banner do Restaurante">
-                <img src="../assets/img/cliente.png" alt="banner">
             </div>
 
         <div class="laranjTransp">
