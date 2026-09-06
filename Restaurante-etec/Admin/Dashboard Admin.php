@@ -273,24 +273,24 @@ require_once __DIR__ . "/../includes/DeleteProduto.php";
                         </section>
                 </div><br>
 
-                <div class="mensagens-sistema">
+                <div id="mensagemContainer" class="mensagens-container">
 
-                    <div class="card-mensagem">
+                    <div id="mensagemSucesso" class="card-mensagem">
                         <div class="icone-sucesso">✓</div>
 
                         <h3>Sucesso!</h3>
 
-                        <p>Cadastro  feito com sucesso no sistema.</p>
+                        
 
                         <button class="btn-sucesso">Continuar</button>
                     </div>
 
-                    <div class="card-mensagem">
+                    <div id="mensagemErro" class="card-mensagem">
                         <div class="icone-erro">✕</div>
 
                         <h3>Erro!</h3>
 
-                        <p>Não foi possível salvar os dados.</p>
+                        <p id="campo_msgVazio"></p>
 
                         <button class="btn-erro">Tentar novamente</button>
                     </div>
