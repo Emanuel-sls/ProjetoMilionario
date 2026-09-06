@@ -142,6 +142,8 @@ nav a:not(:last-child)::after {
     outline: none;
 }
 
+
+
 /* SEÇÕES */
 
 section#entradas,
@@ -501,6 +503,10 @@ footer {
         margin-top: -50px;
     }
 
+    .selectMesa {
+        margin-left: auto;
+    }
+
 
     main {
 
@@ -541,6 +547,10 @@ footer {
         margin-top: -30px;
 
         padding: 12px;
+    }
+
+    .selectMesa {
+        margin-left: auto;
     }
 
 
@@ -615,6 +625,11 @@ footer {
         padding: 8px;
 
         border-radius: 10px;
+    }
+
+    .selectMesa {
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
