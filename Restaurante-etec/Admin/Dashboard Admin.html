@@ -1,9 +1,19 @@
+
+<?php
+require_once __DIR__ . "/../includes/Conexao.php";
+require_once __DIR__ . "/../includes/CadastroCategoria.php";
+require_once __DIR__ . "/../includes/CadastroP.php";
+require_once __DIR__ . "/../includes/DeleteCategoria.php";
+require_once __DIR__ . "/../includes/DeleteProduto.php";
+
+ ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <Link rel="stylesheet" href="/SaborVivo/ASSETS/CSS/telaADM.css"></Link>
+        <link rel="stylesheet" href="/PROJETOMILIONARIO/Restaurante-etec/assets/css/admstyle.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/PROJETOMILIONARIO/Restaurante-etec/assets/img/android-chrome-192x192.png">
         <title>Sabor Vivor</title>
     </head>
     <body>
@@ -19,7 +29,7 @@
         </header>
 
         <div class="banner">
-            <img src="adm.png" alt="banner">
+            <img src="/PROJETOMILIONARIO/Restaurante-etec/assets/img/adm.png" alt="banner">
         </div>
 
         <div class="laranjTransp">
@@ -225,6 +235,42 @@
                                     </table>
                                 </div>
                             </form>
+
+                                <div class="tabela-container">
+                                    <table> <h3> Solicitação de Pagamento</h3><br>
+                                        <hr>
+                                        <thead>
+                                            <tr>
+                                                <th>N° de Pedidos</th>
+                                                <th>Mesa</th>
+                                                <th>Data/Hora</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>05</td>
+                                                <td>18/06/2026 11:00</td>
+                                                <td>158,90</td>
+
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>08</td>
+                                                <td>18/06/2026 13:00</td>
+                                                <td>148,00</td>
+                                            </tr>
+                                        </tbody>
+
+
+                                    </table>
+                                </div>
+                            </form>
                     </section>
          
 
@@ -271,6 +317,7 @@
                                         
                                     </div>
                                 </div>
+
 
                             </form>
                         </section>
@@ -338,5 +385,6 @@
 
         <footer></footer>
 
+        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/interacoesDashAdmin.js" defer></script>
     </body>
 </html>
