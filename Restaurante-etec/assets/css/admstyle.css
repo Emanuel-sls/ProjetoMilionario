@@ -1,14 +1,11 @@
-/* Importa as fontes usadas no site */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
 
-/* Remove margens e espaçamentos padrões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Configurações gerais da página */
 body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
@@ -18,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-/* --- CABEÇALHO --- */
+
 header {
     background: linear-gradient(90deg, #ffd280, #ff9500);
     padding: 15px 20px;
@@ -49,7 +46,6 @@ nav a:not(:last-child)::after {
     color: #222;
 }
 
-/* --- BANNER --- */
 .banner {
     width: 100%;
     max-width: 100%;
@@ -70,23 +66,22 @@ nav a:not(:last-child)::after {
 .laranjTransp {
     background-color: #ffbf779a;
     border: none;
-    width: 95%; /* Alterado de valor fixo para percentual */
-    max-width: 1300px; /* Mantém limite máximo */
+    width: 95%; 
+    max-width: 1300px; 
     height: auto;
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
     margin-top: -70px;
     border-radius: 15px;
-    padding: 15px; /* Adiciona espaçamento interno */
+    padding: 15px; 
 }
 
-/* --- CONTEÚDO PRINCIPAL --- */
 main {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
-    gap: 30px; /* Espaçamento entre seções */
+    flex-wrap: wrap;
+    gap: 30px; 
     flex: 1;
     padding: 20px;
     margin-top: 40px;
@@ -139,7 +134,7 @@ textarea {
     resize: none;
 }
 
-button[type="submit"] {
+button[type="button"] {
     background-color: #28c740;
     color: white;
     border: none;
@@ -153,8 +148,21 @@ button[type="submit"] {
 
 }
 
-button[type="submit"]:hover {
+button[type="button"]:hover {
     background-color: #22a836;
+}
+
+.btn-excluir{
+    background-color: #c62828;
+    color: white;
+    border: none;
+    padding: 12px 15px; /* Aumentado para melhor toque */
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: background 0.2s ease;
 }
 
 .tabela-container {
@@ -167,6 +175,10 @@ table {
     width: 100%;
     min-width: 600px;
     border-collapse: collapse;
+}
+
+h3{
+    text-align: center;
 }
 
 th,
@@ -233,31 +245,22 @@ table button:last-child:hover {
 .relatorios {
     width: 100%;
     max-width: 650px;
-
     margin: 30px auto;
-
     padding: 10px;
-
     background-color: #ffffff;
-
     border-radius: 8px;
-
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .relatorios h2 {
     font-size: 20px;
-
     color: #222;
-
     margin-bottom: 5px;
 }
 
 .relatorios hr {
     border: none;
-
     border-top: 2px solid #e5e5e5;
-
     margin-bottom: 12px;
 }
 
@@ -269,31 +272,20 @@ table button:last-child:hover {
 
 .card-relatorio {
     min-height: 67px;
-
     padding: 8px 5px;
-
     background-color: #e5e8eb;
-
     border-radius: 7px;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
     text-align: center;
 }
 
 .card-relatorio p {
     margin: 0 0 5px;
-
     font-size: 17px;
-
     line-height: 1.1;
-
     color: #555;
 }
 
@@ -303,7 +295,6 @@ table button:last-child:hover {
     color: #555;
 }
 
-/* RODAPÉ */
 footer {
     background: linear-gradient(90deg, #ffd280, #ff9500);
     width: 100%;
@@ -319,35 +310,20 @@ footer {
     z-index: 1000;
 }
 
-.mensagens-container.ativo{
-    display: flex;
-}
-
-.mensagens-container{
-    position: fixed;
-    top: 0;
-    left: 0;
-
+.mensagens-sistema{
     width: 100%;
-    height: 100vh;
-
-    display: none;
-
+    display: flex;
     justify-content: center;
-    align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.4);
-
-    z-index: 9999;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 90px;
 }
 
 .card-mensagem{
-    display: none;
-
     background-color: #ffffff;
-    width: 280px;
-    padding: 30px;
-
+    width: 230px;
+    padding: 25px 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -412,8 +388,6 @@ footer {
     background-color: #c62828;
 }
 
-
-/* --- AJUSTES RESPONSIVOS POR TAMANHO DE TELA --- */
 @media (max-width: 992px) {
     .laranjTransp {
         margin-top: -50px;
