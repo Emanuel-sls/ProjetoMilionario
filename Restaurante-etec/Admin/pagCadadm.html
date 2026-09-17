@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Restaurante-etec/assets/css/cadAdm.css">
+    <link rel="stylesheet" href="../assets/css/cadAdm.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/android-chrome-192x192.png">
     <title>Sabor Vivo</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon192px.png">
 </head>
 <body>
     <div class="painel">
-        <!-- Cabeçalho: Título e Subtítulo da Tela Inicial -->
+
         <header>
             <p class="cadastro">Cadastro</p>
             <p class="acesso-adm">Acesso Administrativo</p>
@@ -17,7 +17,6 @@
             <h1 class="titulo">Sabor Vivo</h1>
         </header>
 
-        <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
           <form class="formulario">
                 <input type="text" placeholder="Nome Completo: ">
@@ -31,10 +30,32 @@
           </form>
         </main><br>
 
-
-        <!-- Rodapé:Info. da Tela Inicial -->
         <footer>
-            <a href="#">Se não tiver, Cadastre-se</a>
         </footer>
+    </div>
+    
+                <div class="mensagens-sistema">
+
+                    <div class="card-mensagem">
+                        <div class="icone-sucesso">✓</div>
+
+                        <h3>Sucesso!</h3>
+
+                        <p>Cadastro  feito com sucesso no sistema.</p>
+
+                        <button class="btn-sucesso">Continuar</button>
+                    </div>
+
+                    <div class="card-mensagem">
+                        <div class="icone-erro">✕</div>
+
+                        <h3>Erro!</h3>
+
+                        <p>Não foi possível salvar os dados.</p>
+
+                        <button class="btn-erro">Tentar novamente</button>
+                    </div>
+                </div>
+
 </body>
 </html>

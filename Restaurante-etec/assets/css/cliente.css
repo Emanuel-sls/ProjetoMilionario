@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #ffd280, #ff9500);
+    padding: 15px 20px;
+    margin-bottom: 25px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 500;
+    color: #222;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    white-space: nowrap;
+}
+
+nav a:not(:last-child)::after {
+    content: "|";
+    margin-left: 12px;
+    color: #222;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.laranjTransp {
+    width: 95%;
+    max-width: 1300px;
+    height: auto;
+    margin: -70px auto 0;
+    padding: 15px;
+    background-color: #fbc78c9a;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.selectMesa {
+    background: #ff9500;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    outline: none;
+    max-width: 100%;
+}
+
+section#entradas,
+section#principais,
+section#sobremesas,
+section#bebidas,
+section#combos,
+section#promocoes,
+section#visualizacaoPedido {
+    width: 100%;
+    max-width: 650px;
+    padding: clamp(15px, 3vw, 25px);
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+section h2 {
+    font-size: clamp(20px, 3vw, 26px);
+    margin-bottom: 15px;
+    color: #222;
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #e2e2e2;
+}
+
+.item-produto {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.foto-produto {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #f9f9f9;
+}
+
+.info-produto {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.nome-produto {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: bold;
+    color: #333;
+    overflow-wrap: break-word;
+}
+
+.descricao-produto {
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
+    color: #666;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+}
+
+.preco-produto {
+    font-weight: bold;
+    color: #ff7a00;
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.mostrarMais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #ffffff98;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 80px;
+    height: auto;
+    resize: vertical;
+}
+
+footer {
+    width: 100%;
+    min-height: 40px;
+    padding: 6px 8px;
+    background: linear-gradient(90deg, #ffd280, #ff9500);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+footer button{
+    background: #f7f5f3c9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: clamp(12px, 2.5vw, 15px);
+    max-width: 100%;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: clamp(12px, 2vw, 18px);
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.btn-pedido {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 5px 11px;
+    background-color: white;
+    color: #777;
+    border: none;
+    border-radius: 10px;
+    font-size: clamp(9px, 1.5vw, 13px);
+    white-space: nowrap;
+    cursor: pointer;
+    flex-shrink: 1;
+}
+
+.btn-confirmar {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #ff9500;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fundo-pagamento {
+    width: 100%;
+    max-width: 675px;
+    min-height: 0;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.headerDois {
+    width: 100%;
+    min-height: 50px;
+    background: linear-gradient(90deg, #ffd280, #ff9500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.headerDois h2 {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(16px, 4vw, 22px);
+}
+
+.laranjDois {
+    width: 90%;
+    max-width: 600px;
+    min-height: 300px;
+    height: auto;
+    padding: clamp(15px, 4vw, 30px);
+    margin: 25px auto;
+    background-color: #fbc78c9a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainDois {
+    width: 100%;
+    min-height: 250px;
+    height: auto;
+    padding: clamp(15px, 4vw, 25px);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.mainDois h2 {
+    text-align: center;
+    font-size: clamp(18px, 4vw, 24px);
+    overflow-wrap: break-word;
+}
+
+.footerDois {
+    width: 100%;
+    min-height: 55px;
+    height: auto;
+    background: linear-gradient(90deg, #ffd280, #ff9500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.footerDois button {
+    background: #f7f5f3c9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: clamp(12px, 2.5vw, 15px);
+    max-width: 100%;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.total {
+    font-weight: bold;
+    color: #ff7a00;
+    font-size: clamp(13px, 2.5vw, 16px);
+    text-align: center;
+    padding: 15px 5px;
+    overflow-wrap: break-word;
+}
+
+.pedAdicionados {
+    font-size: clamp(13px, 2.5vw, 16px);
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .fundo-pagamento {
+        width: 100%;
+    }
+
+    .laranjDois {
+        width: 94%;
+        min-height: 280px;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .mainDois {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerDois {
+        min-height: 45px;
+        padding: 8px 10px;
+    }
+
+    .laranjDois {
+        width: 94%;
+        min-height: 250px;
+        padding: 15px;
+        margin: 15px auto;
+        border-radius: 10px;
+    }
+
+    .mainDois {
+        min-height: 220px;
+        padding: 15px;
+    }
+
+    .mainDois h2 {
+        font-size: 18px;
+    }
+
+    .footerDois {
+        min-height: 50px;
+        padding: 7px 10px;
+    }
+
+    .footerDois button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .laranjDois {
+        width: 96%;
+        padding: 10px;
+    }
+
+    .mainDois {
+        padding: 12px;
+    }
+
+    .mainDois h2 {
+        font-size: 16px;
+    }
+
+    .footerDois button {
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+}

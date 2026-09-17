@@ -1,66 +1,49 @@
-/* Importa as fontes usadas no site */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
 
-/* Remove margens e espaçamentos padrões */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Configurações gerais da página */
+
 body{
     min-height: 100vh;
-
-    /* Imagem de fundo */
-    background: url("Restaurante-etec/assets/img/inicialImg.png") center center/cover no-repeat;
-
-    /* Centraliza tudo na tela */
+    background: url("../img/inicialimg.png") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Fonte principal */
     font-family: 'Montserrat', sans-serif;
-
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: multiply; 
 }
 
-/* Caixa principal */
 .painel{
     width: 100%;
     max-width: 500px;
     min-height: 80vh;
-
-    /* Efeito de vidro */
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.2);
-
-    /* Organiza os elementos em coluna */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding: 30px 20px;
     text-align: center;
 }
 
-/* Espaço acima do cabeçalho */
 header{
     margin-top: 20px;
 }
 
-/* Texto menor acima do título */
 .acesso-digital{
     font-size: 0.9rem;
     color: #000000;
 }
 
-/* Título principal */
 .titulo{
     font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 5vw, 3rem);
@@ -70,7 +53,6 @@ header{
     color: #000;
 }
 
-/* Linha decorativa */
 .linhaA{
     width: 70%;
     margin: 15px auto;
@@ -78,13 +60,11 @@ header{
     border-top: 1px solid #000;
 }
 
-/* Texto abaixo do título */
 .subtitulo{
     font-size: 0.9rem;
     color: #000000;
 }
 
-/* Área dos botões */
 main{
     display: flex;
     flex-direction: column;
@@ -92,7 +72,6 @@ main{
     align-items: center;
 }
 
-/* Botões */
 .button{
     width: 220px;
     max-width: 100%;
@@ -112,19 +91,16 @@ main{
     transition: 0.3s;
 }
 
-/* Animação ao passar o mouse */
 .button:hover{
     transform: scale(1.05);
 }
 
-/* Rodapé */
 footer{
     font-size: 0.8rem;
     color: #000000;
     line-height: 1.5;
 }
 
-/* Segunda linha decorativa */
 .linhaB{
     width: 25%;
     margin: 15px auto;
@@ -132,7 +108,6 @@ footer{
     border-top: 1px solid #000;
 }
 
-/* Ajustes para celular */
 @media (max-width: 480px){
 
     .painel{
@@ -153,7 +128,6 @@ footer{
     }
 }
 
-/* Ajustes para tablets e telas maiores */
 @media (min-width: 768px){
 
     .painel{

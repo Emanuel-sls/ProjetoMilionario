@@ -1,10 +1,9 @@
 <?php 
 
-// Conexão com o banco de dados
 //$conection = mysqli_connect(
     //"localhost",
-    //"",
-    //"",
+    //"root",
+    //"40028922jaem#",
     //"restaurante"
 //);
 
