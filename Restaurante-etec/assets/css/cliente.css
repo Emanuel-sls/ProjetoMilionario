@@ -131,7 +131,7 @@ nav a:not(:last-child)::after {
 
 /*Botão Selecionar Mesa*/
 
-.selectMesa{
+.selectMesa {
     background: #ff9500;
     display: flex;
     border: none;

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SaborVivo/ASSETS/CSS/telaCADadm.css">
+    <link rel="stylesheet" href="../assets/css/cadAdm.css">
     <title>Sabor Vivo</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon192px.png">
 </head>
 <body>
     <div class="painel">
@@ -20,21 +20,23 @@
         <!-- Tela principal: Botões um para cliente e outro adm -->
         <main>
           <form class="formulario">
-                <input type="text" placeholder="Nome Completo: ">
+                <input id="nomeComp" type="text" placeholder="Nome Completo: ">
 
-                <input type="text" name="cpf" inputmode="numeric" maxlength="14" placeholder="CPF: ">
+                <input id="cpf" type="text" name="cpf" inputmode="numeric" maxlength="14" placeholder="CPF: ">
 
-                <input type="email" placeholder="E-mail: ">
+                <input id="email" type="email" placeholder="E-mail: ">
 
-                <input type="password" placeholder="Senha: ">
-                <button class="button" type="button">CADASTRAR</button>
+                <input id="senha" type="password" placeholder="Senha: ">
+                <button id="cadastrar" class="button" type="button">CADASTRAR</button>
           </form>
         </main><br>
 
 
         <!-- Rodapé:Info. da Tela Inicial -->
         <footer>
-            <a href="#">Se não tiver, Cadastre-se</a>
+            
         </footer>
+
+        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/cadastro_admin.js"></script>
 </body>
 </html>
