@@ -278,18 +278,34 @@ footer button{
     cursor: pointer;
 }
 
+/*Eu Pedro mexi aqui para fazer a telinha de chamar garçom fixada no meio da tela*/
 .fundo-pagamento {
+
     width: 100%;
     max-width: 675px;
     min-height: 0;
     height: auto;
-    position: relative;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     background-color: #ffffff;
     box-sizing: border-box;
     overflow: hidden;
+
+    display: none;
+
+    z-index: 9999;
+}
+
+.fundo-pagamento.ativo{
+    display: flex;
 }
 
 .headerDois {
