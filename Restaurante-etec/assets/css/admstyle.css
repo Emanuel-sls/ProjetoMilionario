@@ -310,38 +310,53 @@ footer {
     z-index: 1000;
 }
 
-.mensagens-sistema{
+.mensagens-sistema {
+
     width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: none;
+
     margin-top: 20px;
     margin-bottom: 90px;
+
 }
 
-.card-mensagem{
+.mensagens-sistema.ativo {
+    display: block;
+}
+
+.card-mensagem {
+
     background-color: #ffffff;
+
     width: 230px;
     padding: 25px 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+    /* FIXO NO CENTRO */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* POR CIMA DE TUDO */
+    z-index: 9999;
 }
 
-.card-mensagem h3{
+.card-mensagem h3 {
     margin: 15px 0 10px;
     color: #222;
 }
 
-.card-mensagem p{
+.card-mensagem p {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
 }
 
 .icone-sucesso,
-.icone-erro{
+.icone-erro {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -351,18 +366,18 @@ footer {
     font-weight: bold;
 }
 
-.icone-sucesso{
+.icone-sucesso {
     border: 2px solid #28c740;
     color: #28c740;
 }
 
-.icone-erro{
+.icone-erro {
     border: 2px solid #e53935;
     color: #e53935;
 }
 
 .btn-sucesso,
-.btn-erro{
+.btn-erro {
     width: 100%;
     padding: 12px;
     border: none;
@@ -372,19 +387,19 @@ footer {
     cursor: pointer;
 }
 
-.btn-sucesso{
+.btn-sucesso {
     background-color: #28c740;
 }
 
-.btn-sucesso:hover{
+.btn-sucesso:hover {
     background-color: #22a836;
 }
 
-.btn-erro{
+.btn-erro {
     background-color: #e53935;
 }
 
-.btn-erro:hover{
+.btn-erro:hover {
     background-color: #c62828;
 }
 

@@ -10,12 +10,12 @@
     <body>
         <header>
             <nav>ADM:
-                <a href="#categoria">Categoria</a>
-                <a href="#produto">Produto</a>
-                <a href="#pedido">Pedido</a>
-                <a href="#mesas">Mesas</a>
-                <a href="#relatorios">Relatórios</a>
-                <a href="#">Cadastrar Funcionário</a>
+                <a id="toCategorias" href="#categoria">Categoria</a>
+                <a id="toProdutos" href="#produto">Produto</a>
+                <a id="toPedidos" href="#pedido">Pedido</a>
+                <a id="toMesas" href="#mesas">Mesas</a>
+                <a id="toRelatorios" href="#relatorios">Relatórios</a>
+                <a id="toCadastro" href="#">Cadastrar Funcionário</a>
             </nav>
         </header>
 
@@ -35,12 +35,12 @@
                         <p><label>Descrição: </label><br>
                         <textarea id="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
 
-                        <p><button type="button">Salvar Categoria</button></p>
-                        <p><button type="button">Editar Categoria</button></p>
+                        <p><button id="btn1" type="button">Salvar Categoria</button></p>
+                        <p><button id="btn2" type="button">Editar Categoria</button></p>
                         
                         <div class="tabela-container">
                             <table>
-                                <thead>
+                                <thead id="tabelaCategoria">
                                     <tr>
                                         <th>ID</th>
                                         <th>Nome</th>
@@ -48,25 +48,6 @@
                                         <th>Ações</th>
                                     </tr>
                                 </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Entradas</td>
-                                        <td>Pratos Para Inicial a Refeição</td>
-                                        <td><button type="button">Excluir</button></td>
-                                    </tr>
-                                </tbody>
-
-                                <tbody>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Pratos Principais</td>
-                                        <td>Pratos Completos</td>
-                                        <td><button type="button">Excluir</button></td>
-                                    </tr>
-                                </tbody>
-
                             </table>
                         </div>
                     </form>
@@ -80,7 +61,7 @@
                                 <input id="nomeProd" type="text" placeholder="Ex: Entradas, Bebidas"><br>
 
                                 <p><label>Categoria: </label>
-                                <select id="opcoes" name="opcoes">
+                                <select id="opcoesCatDoProduto" name="opcoes">
                                     <option value="" disabled selected>Selecione</option>
                                     <option value="opcao1">Entradas</option>
                                     <option value="opcao2">Pratos Principais</option>
@@ -101,10 +82,10 @@
                                 <textarea id="descProd" type="text" placeholder="Ingredientes e Descrição dos Produtos"></textarea></p>
 
                                 <label>Imagem: </label><br>
-                                <input id="imgProd" type="file" placeholder="Nenhum arquivo escolhido"><br>
+                                <input id="imgProd" type="text" placeholder="Digite a URL da imagem"><br>
 
-                                <p><button type="button">Salvar Produto</button></p>
-                                <p><button type="button">Editar Produto</button></p>
+                                <p><button id="btn3" type="button">Salvar Produto</button></p>
+                                <p><button id="btn4" type="button">Editar Produto</button></p>
                                 
                                 <div class="tabela-container">
                                     <table> <h3>Lista de Produtos Cadastrados</h3><br>
@@ -119,7 +100,7 @@
                                             </tr>
                                         </thead>
 
-                                        <tbody>
+                                        <tbody id="tabelaProduto">
                                             <tr>
                                                 <td>1</td>
                                                 <td>Torrada</td>
@@ -131,9 +112,6 @@
                                                 </td>
 
                                             </tr>
-                                        </tbody>
-
-                                        <tbody>
                                             <tr>
                                                 <td>2</td>
                                                 <td>Fanta</td>
@@ -145,9 +123,6 @@
                                                 </td>
 
                                             </tr>
-                                        </tbody>
-
-                                        <tbody>
                                             <tr>
                                                 <td>3</td>
                                                 <td>Feijoada</td>
@@ -178,54 +153,15 @@
                                                 <th>Mesa</th>
                                                 <th>Data/Hora</th>
                                                 <th>Preço</th>
-                                                <th>Status</th>
                                                 <th>Ações</th>
                                             </tr>
                                         </thead>
 
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>05</td>
-                                                <td>18/06/2026 11:00</td>
-                                                <td>48,00</td>
-                                                <td> 
-                                                    <select id="opcoes" name="opcoes">
-                                                        <option value="" disabled selected>Selecione</option>
-                                                        <option value="opcao1">Preparando</option>
-                                                        <option value="opcao2">Pendente</option>
-                                                        <option value="opcao3">Finalizado</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <button type="button">Cancelar</button>
-                                                </td>
-
-                                            </tr>
-                                        </tbody>
-
-                                        <tbody>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>08</td>
-                                                <td>18/06/2026 13:00</td>
-                                                <td>58,90</td>
-                                                <td> 
-                                                    <select id="opcoes" name="opcoes">
-                                                        <option value="" disabled selected>Selecione</option>
-                                                        <option value="opcao1">Preparando</option>
-                                                        <option value="opcao2">Pendente</option>
-                                                        <option value="opcao3">Finalizado</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <button type="button">Cancelar</button>
-                                                </td>
-                                            </tr>
+                                        <tbody id="tabelaPedidos">
+                                            <!-- pedidos carregados aqui pelo JS -->
                                         </tbody>
                                     </table>
                                 </div>
-                            </form>
 
                                 <div class="tabela-container">
                                     <table> <h3> Solicitação de Pagamento</h3><br>
@@ -239,30 +175,12 @@
                                             </tr>
                                         </thead>
 
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>05</td>
-                                                <td>18/06/2026 11:00</td>
-                                                <td>158,90</td>
-
-                                            </tr>
+                                        <tbody id="tabelaPagamentos">
+                                            <!-- pedidos carregados aqui pelo JS -->
                                         </tbody>
-
-                                        <tbody>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>08</td>
-                                                <td>18/06/2026 13:00</td>
-                                                <td>148,00</td>
-                                            </tr>
-                                        </tbody>
-
-
                                     </table>
                                 </div>
-                            </form>
-                    </section>
+                            </section>
          
 
            
@@ -271,53 +189,24 @@
                             <hr>
                             <form>
                                 <label>Números de Mesas: </label><br>
-                                <input id="nomeCateg" type="text" placeholder="Ex: Entradas, Bebidas"><br>
+                                <input id="numMesa" type="number" placeholder="Ex: 5" min="1"><br>
 
                                 <p><label>Capacidade: </label><br>
-                                <textarea id="descCateg" type="text" placeholder="Ex: Entradas, Bebidas"></textarea></p>
+                                <input id="descMesa" type="number" placeholder="Ex: 4" min="1"></p>
 
-                                <p><button type="button">Cadastrar Mesa</button></p>
+                                <p><button id="btn5" type="button">Cadastrar Mesa</button></p>
+                                <p><button id="btn6" type="button">Editar Mesa</button></p>
 
-                                <div class="mesaLivre">
-                                    <h3>Mesa1</h3>
-
-                                    <p>Capacidade: 6</p>
-
-                                    <div class="status">
-                                    <select id="opcoes" name="opcoes">
-                                            <option value="" disabled selected>Selecione:</option>
-                                            <option value="opcao1">Livre</option>
-                                            <option value="opcao2">Reservado</option>
-                                            <option value="opcao3">Ocupado</option>
-                                        </select>
-                                    </div>
-                                </div><br>
-
-                                <div class="mesaLivre">
-                                    <h3>Mesa2</h3>
-
-                                    <p>Capacidade: 4</p>
-
-                                    <div class="status">
-                                        <select id="opcoes" name="opcoes">
-                                            <option value="" disabled selected>Selecione:</option>
-                                            <option value="opcao1">Livre</option>
-                                            <option value="opcao2">Reservado</option>
-                                            <option value="opcao3">Ocupado</option>
-                                        </select>
-                                        
-                                    </div>
-                                </div><br>
-
-                                <button type="button">Editar</button>
-                                <button class="btn-erro">Excluir</button>
+                                <div id="listaMesas">
+                                    <!-- as mesas cadastradas são carregadas aqui dinamicamente pelo JS -->
+                                </div>
 
                             </form>
                         </section>
 
             
 
-                        <section class="relatorios">
+                        <section class="relatorios" id="relatorios">
 
                             <h2>Relatórios Básicos</h2>
 
@@ -327,32 +216,34 @@
 
                                 <div class="card-relatorio">
                                     <p>Total de Pedidos<br>hoje:</p>
-                                    <strong>28</strong>
+                                    <strong id="totalPedidosHoje">-</strong>
                                 </div>
 
                                 <div class="card-relatorio">
                                     <p>Faturamento<br>no dia:</p>
-                                    <strong>R$ 1.245,80</strong>
+                                    <strong id="faturamentoDia">-</strong>
                                 </div>
 
                                 <div class="card-relatorio">
                                     <p>Mesas ocupadas:</p>
-                                    <strong>6 / 12</strong>
+                                    <strong id="mesasOcupadas">-</strong>
                                 </div>
 
                                 <div class="card-relatorio">
                                     <p>Produto mais<br>vendido:</p>
-                                    <strong>Feijoada<br>Completa</strong>
+                                    <strong id="produtoMaisVendido">-</strong>
                                 </div>
 
                             </div>
 
+                            
+
                         </section>
                 </div><br>
 
-                <div class="mensagens-sistema">
+                <div class="mensagens-sistema" id="mensagemContainer">
 
-                    <div class="card-mensagem">
+                    <div class="card-mensagem" id="mensagemSucesso">
                         <div class="icone-sucesso">✓</div>
 
                         <h3>Sucesso!</h3>
@@ -362,12 +253,12 @@
                         <button class="btn-sucesso">Continuar</button>
                     </div>
 
-                    <div class="card-mensagem">
+                    <div class="card-mensagem" id="mensagemErro">
                         <div class="icone-erro">✕</div>
 
                         <h3>Erro!</h3>
 
-                        <p>Não foi possível salvar os dados.</p>
+                        <p id="campo_msgVazio">Não foi possível salvar os dados.</p>
 
                         <button class="btn-erro">Tentar novamente</button>
                     </div>
@@ -378,6 +269,6 @@
 
         <footer></footer>
 
-        <script src="/PROJETOMILIONARIO/Restaurante-etec/assets/js/interacoesDashAdmin.js" defer></script>
+        <script src="../assets/js/interacoesDashAdmin.js" defer></script>
     </body>
 </html>
